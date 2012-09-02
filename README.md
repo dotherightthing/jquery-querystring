@@ -6,4 +6,6 @@ code taken from [here](http://stackoverflow.com/questions/901115/get-query-strin
 
 example:
 
-    var qvalue = $.querystring('q');
+    var qvalue = $.querystring( window.location.search, 'q' );
+    var qvalue = $.querystring( $('a').attr('href'), 'q' );
+    var qvalue = $.querystring( data_href, 'q' );
